@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body{
+    height: 100%;
+    width: 100%;
+} 
+
+  header{
+    text-align: center;
+  }
+.equipments-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* background: rgb(168,255,187); */
+    background-color: #0ab752;
+    /* background: radial-gradient(circle,#85d6a7 100%, #0ab752  100%); */
+    justify-content: space-around;
+    align-items: center;
+  }
+.equipments {
+  width: 263px;
+  height: 437px;
+    background-color: aliceblue;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    border-radius: 10px;
+    margin: 35px 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.equipments img{
+    width: 70%;
+    border: 15px solid azure;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.textBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  text-align: justify;
+  font-size: medium;
+  opacity: 1; 
+}
+.equipments:hover .textBox{
+  
+  opacity: 0.2;
+  display: none;
+}
+#amountBox{
+  width: 106%;
+  height: 70%;
+  background-color:azure;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 0 25px;
+  align-items:start;
+}
+#originalPrice{
+  height: 100%;
+  font-weight: lighter;
+  font-size: 15pt;
+  gap: 5px;
+  color: red;
+  text-decoration: line-through;
+  text-decoration-style: dashed;
+}
+#discountPrice{
+  height: 100%;
+  font-family: monospace;
+  font-size: 14pt;
+  color: green;
+  gap: 5px;
+}
+.paymentButton {
+  height: fit-content;
+  width: 100%;
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(204, 200, 200, 0.19), 0 6px 6px rgba(236, 223, 223, 0.23);
+  border-radius: 10px;
+}
+.button1 {
+
+  background-color: white; 
+  color: black; 
+  border: 2px solid green;
+}
+.button1:hover {
+    background-color: green;
+    color: white;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid orange;
+}
+.button2:hover {
+  background-color: orange;
+  color: white;
+}
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+.button3:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.titleBox{
+  font-family: cursive;
+  color: rgb(57, 56, 56);
+  font-style: italic;
+  font-weight:bold;
+  font-size: smaller;
+  gap: 2px;
+  text-shadow: 0 10px 20px rgba(204, 200, 200, 0.19), 0 6px 6px rgba(236, 223, 223, 0.23);
+}
+span{
+  color: black; 
+}
+.hidden {
+  opacity: 0;
+  
+}
+
+.paymentButton:hover{
+  justify-content: center;
+  align-items: center;
+}
+
+.equipments:hover .hidden {
+  opacity: 1;
+}
+
