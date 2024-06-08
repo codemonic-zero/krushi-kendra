@@ -24,7 +24,7 @@ body {
 .categories-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: absolute;
     width: 12%;
@@ -36,7 +36,7 @@ body {
     background-color: aliceblue;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 10px;
-    margin: 35px 10px;
+    margin: 35px 15px;
     /* padding: 30px; */
     font-size: 30px;
     text-align: center;
